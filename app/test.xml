@@ -1,0 +1,143 @@
+<deals>
+	<deal id="1">
+		<dealTitle>+4 cities to the map</dealTitle>
+		<clientName>Immochan</clientName>
+		<dealExpectedDate>2018-01-23</dealExpectedDate>
+		<dealValue>150000</dealValue>
+		<dealCurrency>HUF</dealCurrency>
+		<dealExchangedValue>150000</dealExchangedValue>
+		<dealStatus>1</dealStatus>
+		<dealType>1</dealType>
+	</deal>
+	<deal id="2">
+		<dealTitle>+2 languages</dealTitle>
+		<clientName>Immochan</clientName>
+		<dealExpectedDate>2018-02-23</dealExpectedDate>
+		<dealValue>200000</dealValue>
+		<dealCurrency>HUF</dealCurrency>
+		<dealExchangedValue>200000</dealExchangedValue>
+		<dealStatus>2</dealStatus>
+		<dealType>1</dealType>
+	</deal>
+	<deal id="3">
+		<dealTitle>Landing page tweaks</dealTitle>
+		<clientName>Drone</clientName>
+		<dealExpectedDate>2018-01-25</dealExpectedDate>
+		<dealValue>300</dealValue>
+		<dealCurrency>USD</dealCurrency>
+		<dealExchangedValue>90000</dealExchangedValue>
+		<dealStatus>3</dealStatus>
+		<dealType>1</dealType>
+	</deal>
+	<deal id="4">
+		<dealTitle>Landing page tweaks</dealTitle>
+		<clientName>Drone</clientName>
+		<dealExpectedDate>2018-01-25</dealExpectedDate>
+		<dealValue>100</dealValue>
+		<dealCurrency>USD</dealCurrency>
+		<dealExchangedValue>30000</dealExchangedValue>
+		<dealStatus>4</dealStatus>
+		<dealType>1</dealType>
+	</deal>
+		<deal id="5">
+		<dealTitle>+4 cities to the map</dealTitle>
+		<clientName>Immochan</clientName>
+		<dealExpectedDate>2018-02-23</dealExpectedDate>
+		<dealValue>150000</dealValue>
+		<dealCurrency>HUF</dealCurrency>
+		<dealExchangedValue>150000</dealExchangedValue>
+		<dealStatus>1</dealStatus>
+		<dealType>1</dealType>
+	</deal>
+	<deal id="6">
+		<dealTitle>+2 languages</dealTitle>
+		<clientName>Immochan</clientName>
+		<dealExpectedDate>2018-01-23</dealExpectedDate>
+		<dealValue>200000</dealValue>
+		<dealCurrency>HUF</dealCurrency>
+		<dealExchangedValue>200000</dealExchangedValue>
+		<dealStatus>2</dealStatus>
+		<dealType>1</dealType>
+	</deal>
+	<deal id="7">
+		<dealTitle>Landing page tweaks</dealTitle>
+		<clientName>Drone</clientName>
+		<dealExpectedDate>2018-01-25</dealExpectedDate>
+		<dealValue>300</dealValue>
+		<dealCurrency>USD</dealCurrency>
+		<dealExchangedValue>90000</dealExchangedValue>
+		<dealStatus>3</dealStatus>
+		<dealType>1</dealType>
+	</deal>
+	<deal id="8">
+		<dealTitle>Landing page tweaks</dealTitle>
+		<clientName>Drone</clientName>
+		<dealExpectedDate>2018-02-25</dealExpectedDate>
+		<dealValue>100</dealValue>
+		<dealCurrency>USD</dealCurrency>
+		<dealExchangedValue>30000</dealExchangedValue>
+		<dealStatus>4</dealStatus>
+		<dealType>1</dealType>
+	</deal>
+	<deal id="9">
+		<dealTitle>Landing page tweaks</dealTitle>
+		<clientName>Drone</clientName>
+		<dealExpectedDate>2018-03-25</dealExpectedDate>
+		<dealValue>100</dealValue>
+		<dealCurrency>USD</dealCurrency>
+		<dealExchangedValue>30000</dealExchangedValue>
+		<dealStatus>4</dealStatus>
+		<dealType>1</dealType>
+	</deal>
+	<deal id="10">
+		<dealTitle>Landing page tweaks</dealTitle>
+		<clientName>Drone</clientName>
+		<dealExpectedDate>2018-03-25</dealExpectedDate>
+		<dealValue>100</dealValue>
+		<dealCurrency>USD</dealCurrency>
+		<dealExchangedValue>30000</dealExchangedValue>
+		<dealStatus>4</dealStatus>
+		<dealType>1</dealType>
+	</deal>
+<!-- expenses -->
+	<deal id="11">
+		<dealTitle>Landing page tweaks</dealTitle>
+		<clientName>Drone</clientName>
+		<dealExpectedDate>2018-03-25</dealExpectedDate>
+		<dealValue>100</dealValue>
+		<dealCurrency>USD</dealCurrency>
+		<dealExchangedValue>30000</dealExchangedValue>
+		<dealStatus>4</dealStatus>
+		<dealType>2</dealType>
+	</deal>
+	<deal id="12">
+		<dealTitle>Landing page tweaks</dealTitle>
+		<clientName>Drone</clientName>
+		<dealExpectedDate>2018-03-25</dealExpectedDate>
+		<dealValue>100</dealValue>
+		<dealCurrency>USD</dealCurrency>
+		<dealExchangedValue>30000</dealExchangedValue>
+		<dealStatus>4</dealStatus>
+		<dealType>2</dealType>
+	</deal>
+	<deal id="13">
+		<dealTitle>Landing page tweaks</dealTitle>
+		<clientName>Drone</clientName>
+		<dealExpectedDate>2018-02-25</dealExpectedDate>
+		<dealValue>100</dealValue>
+		<dealCurrency>USD</dealCurrency>
+		<dealExchangedValue>30000</dealExchangedValue>
+		<dealStatus>4</dealStatus>
+		<dealType>2</dealType>
+	</deal>
+	<deal id="14">
+		<dealTitle>Landing page tweaks</dealTitle>
+		<clientName>Drone</clientName>
+		<dealExpectedDate>2018-01-25</dealExpectedDate>
+		<dealValue>100</dealValue>
+		<dealCurrency>USD</dealCurrency>
+		<dealExchangedValue>30000</dealExchangedValue>
+		<dealStatus>4</dealStatus>
+		<dealType>2</dealType>
+	</deal>
+</deals>

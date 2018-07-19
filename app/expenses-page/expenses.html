@@ -1,0 +1,62 @@
+<h2>Expenses</h2>
+
+<div class="row justify-content">
+	<div class="col-md-2">
+		<button type="button" class="btn btn-primary" ng-click="openModal('add-expense-modal');">Add new</button>
+	</div>
+	<div class="col-md-2 offset-md-2">
+		<select ng-model="filter.type" class="form-control">
+			<option value="1">Income</option>
+			<option value="2">Expense</option>
+		</select>
+	</div>
+
+	<div class="col-md-2">
+		<select ng-model="filter.date" class="form-control"
+			ng-options="date for date in dates track by date" ng-init="filter.date=dates[0]">
+		</select>
+	</div>
+
+</div>
+
+<deals-list></deals-list>
+
+<modal id="add-expense-modal">
+	<form name="newExpense" novalidate>
+		<div class="custom-modal">
+			<div class="modal-body">
+				<h1>Create expense</h1>
+				<div class="row">
+					<div class="col-md-4">
+						<label>Expense name: <input type="text" name="dealTitle" ng-model="expense.dealTitle" class="form-control" required ng-minlength="3"/></label>
+						<p ng-show="newExpense.dealTitle.$error.minlength && newExpense.dealTitle.$touched">Expense name is too short.</p>
+						<!-- <p ng-show="newExpense.dealTitle.$invalid && newExpense.dealTitle.$touched">Expense name is required.</p> -->
+					</div>
+					<div class="col-md-4">
+						<label>Client name: <input type="text" name="clientName" ng-model="expense.clientName" class="form-control" required ng-minlength="3"/></label>
+						<p ng-show="newExpense.clientName.$error.minlength && newExpense.clientName.$touched">Client name is too short.</p>
+						<!-- <p ng-show="newExpense.clientName.$invalid && newExpense.clientName.$touched">Client name is required.</p> -->
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<label>Expected date: <input type="date" name="dealExpectedDate" ng-model="expense.dealExpectedDate" class="form-control" required/></label>
+						<p ng-show="newExpense.dealExpectedDate.$invalid && newExpense.dealExpectedDate.$touched">Expected date is required.</p>
+					</div>
+					<div class="col-md-4">
+						<label>Expense value: <input type="number" name="dealValue" ng-model="expense.dealValue" class="form-control" required/></label>
+						<p ng-show="newExpense.dealValue.$invalid && newExpense.dealValue.$touched && !newExpense.$pristine">Expense value is required.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<!-- <button ng-click="saveExpense();" class="btn btn-primary">Save</button> -->
+						<button ng-click="saveExpense();" class="btn btn-primary" ng-disabled="newExpense.$invalid">Save</button>
+						<button ng-click="closeModal('add-expense-modal');" class="btn btn-success">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal-background"></div>
+	</form>
+</modal>

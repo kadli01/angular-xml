@@ -1,0 +1,57 @@
+<div>
+	<div class="row justify-content-center">
+		<div class="col-md-2" ng-repeat="date in dates" style="min-width: 20%;" ng-model="date">
+			{{date}}
+			<div class="card" ng-repeat="deal in deals track by deal._id" ng-show="deal.dateGroup.includes(date) && deal.dealType == filter.type">
+				<div class="card-body">
+					<h6 class="card-title"># {{deal._id}} - {{deal.dealTitle}}</h6>
+					<h7 class="card-subtitle">{{deal.clientName}}</h7>
+					<div>
+						<span class="card-text">{{deal.dealExpectedDate | date : 'MMM-dd' }}</span>
+						<span class="card-text float-right">{{deal.dealValue}}{{deal.dealCurrency}}</span>
+					</div>
+					<button class="btn btn-primary btn-sm" ng-click="editExpense(deal)">Edit</button>
+					<button class="btn btn-danger btn-sm" ng-click="deleteExpense(deal)">Delete</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<modal id="edit-deal">
+	<form name="editExpenseForm" novalidate>
+		<div class="custom-modal">
+			<div class="modal-body">
+				<h1>Edit expense</h1>
+				<div class="row">
+					<div class="col-md-4">
+						<label>Expense name: <input type="text" name="dealTitle" ng-model="editDeal.dealTitle" class="form-control" required ng-minlength="3"/></label>
+						<p ng-show="editExpenseForm.dealTitle.$error.minlength && editExpenseForm.dealTitle.$touched">Expense name is too short.</p>
+					</div>
+					<div class="col-md-4">
+						<label>Client name: <input type="text" name="clientName" ng-model="editDeal.clientName" class="form-control" required ng-minlength="3"/></label>
+						<p ng-show="editExpenseForm.clientName.$error.minlength && editExpenseForm.clientName.$touched">Client name is too short.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<label>Expected date: <input type="date" name="dealExpectedDate" ng-model="editDeal.dealExpectedDate" class="form-control" required/></label>
+						<p ng-show="editExpenseForm.dealExpectedDate.$invalid && editExpenseForm.dealExpectedDate.$touched">Expected date is required.</p>
+					</div>
+					<div class="col-md-4">
+						<label>Expense value: <input type="number" name="dealValue" ng-model="editDeal.dealValue" class="form-control" required/></label>
+						<p ng-show="editExpenseForm.dealValue.$invalid && editExpenseForm.dealValue.$touched && !editExpenseForm.$pristine">Expense value is required.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<button ng-click="updateDeal(editDeal);" class="btn btn-primary" ng-disabled="editExpenseForm.$invalid">Save</button>
+						<button ng-click="closeModal('edit-deal');" class="btn btn-success">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal-background"></div>
+	</form>
+</modal>
+
